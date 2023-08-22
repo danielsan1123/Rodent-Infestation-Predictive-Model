@@ -19,11 +19,8 @@ I planned to do a numerical prediction base model and eliminate the geographical
 2. Dropping all missing values
 3. Combine two data frames; here rodent data frame has significantly more rows than restaurant data. After combining with an inner merge, there are 56354 rows of data left.
 4. Class balancing - both reports in Manhattan is significantly more data points than in other boroughs. We will randomly select 2000 rows for each borough when deploying
-      Manhattan        32524
-      Bronx             9859
-      Brooklyn          6696
-      Queens            3875
-      Staten Island     3589
+5. 
+Manhattan - 32524, Bronx - 9859, Brooklyn - 6696, Queens - 3875, Staten Island - 3589
    
 # Model Selecting 
 In this project, I will focus on numerical output and distance base model for fast calculation and optimal result.
@@ -49,5 +46,5 @@ Here is an example of a prediction, I choose Greenwich Village in Manhattan.
 # Output
 <img width="321" alt="Screenshot 2023-08-22 at 4 05 51 PM" src="https://github.com/danielsan1123/Rodent-Infestation-Predictive-Model/assets/16438259/413fec6f-20bc-466f-af84-2c361b9e0827">
 
-download the file and try today =)
+download the file and try it today =)
 
