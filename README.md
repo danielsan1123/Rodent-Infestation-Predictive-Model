@@ -14,6 +14,7 @@ Data understanding: the dataset I provided a lot of Features, including latitude
 
 # Data Preparation 
 I planned to do a numerical prediction base model and eliminate the geographical data.
+
 1. Convert Str to Int/float - Assign Borough to numbers
 2. Dropping all missing values
 3. Combine two data frames; here rodent data frame has significantly more rows than restaurant data. After combining with an inner merge, there are 56354 rows of data left.
@@ -28,14 +29,16 @@ I planned to do a numerical prediction base model and eliminate the geographical
 In this project, I will focus on numerical output and distance base model for fast calculation and optimal result.
 
 KNearestNeightbor Classification
+
 KNN is suitable for recognizing data. As my professor in class said, "If it looks like a duck, it's a duck." The theory is easy to understand, and the concept is easy to implement. This is a greedy approach to the question, and the predicted result is controlled by K (distance value) in the algorithm. The model tends to overfit if we have too few features and low K-values.
 
 Gaussian Naive Bayes Classification
+
 Suitable for continuous variables (5 Borough to 1,2,3,4,5), less complex, and provides good scaling with high dimensional features. However, this classification suffers from subject zero frequency, meaning this classification should not be used for regression. 
 
 Support Vector Machine Classification
-Suitable for simple text classification tasks, which represent the frequencies of different words that appear in a data frame. 
 
+Suitable for simple text classification tasks, which represent the frequencies of different words that appear in a data frame. 
 Three of the classification employed are very similar since they are all distance-based models. 
 
 Ultimately, I implement voting ensembles to combine the models' prediction and predict for a single data point(Y).
